@@ -1,0 +1,5 @@
+
+
+<button nz-button (click)="st.export()">导出全部</button>
+<button nz-button (click)="st.export(selected)">导出选择</button>
+<simple-table #st [data]="list" [columns]="columns" (checkboxChange)="checkboxChange($event)"></simple-table>

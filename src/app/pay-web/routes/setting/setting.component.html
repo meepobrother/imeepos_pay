@@ -1,0 +1,12 @@
+<div [formGroup]="form">
+  <standard-form-row block title="充值开关">
+    <nz-switch formControlName="recharge"></nz-switch>
+  </standard-form-row>
+  <standard-form-row grid block title="提现开关">
+    <nz-switch formControlName="tixian"></nz-switch>
+  </standard-form-row>
+  <standard-form-row grid block title="活动链接">
+      <input style="width: 80%" nz-input formControlName="url" placeholder="支付成功跳出广告或活动链接">
+  </standard-form-row>
+</div>
+

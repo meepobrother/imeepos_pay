@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="">
+	<application setting="false">
+		<name><![CDATA[米波支付]]></name>
+		<identifie><![CDATA[imeepos_pay]]></identifie>
+		<version><![CDATA[1.0.3]]></version>
+		<type><![CDATA[business]]></type>
+		<ability><![CDATA[米波支付]]></ability>
+		<description><![CDATA[米波支付]]></description>
+		<author><![CDATA[imeeepos]]></author>
+		<url><![CDATA[https://github.com/meepobrother/imeepos_pay#readme]]></url>
+	</application>
+	<platform>
+		<subscribes>
+		</subscribes>
+		<handles>
+			<message type="text" />
+		</handles>
+		<rule embed="false" />
+		<card embed="false" />
+		<supports>
+			<item type="app" />
+		</supports>
+	</platform>
+	<bindings>
+		<cover>
+			<entry title="首页" do="index" state="" direct="" />
+			<entry title="余额充值" do="chongzhi" state="" direct="" />
+			<entry title="余额提现" do="tixian" state="" direct="" />
+			<entry title="消费记录" do="log" state="" direct="" />
+		</cover>
+		<menu>
+			<entry title="支付记录" do="log" state="" direct="" />
+			<entry title="退款记录" do="refundlog" state="" direct="" />
+			<entry title="支付统计" do="tongji" state="" direct="" />
+			<entry title="基础设置" do="setting" state="" direct="" />
+		</menu>
+	</bindings>
+	<permissions></permissions>
+	<install><![CDATA[install.php]]></install>
+	<uninstall><![CDATA[uninstall.php]]></uninstall>
+	<upgrade><![CDATA[upgrade.php]]></upgrade>
+</manifest>

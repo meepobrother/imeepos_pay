@@ -1,0 +1,20 @@
+<div ontouchstart="" class="weui-wepay-pay-wrap">
+  <div class="weui-wepay-pay">
+    <div class="weui-wepay-pay__bd">
+      <div class="weui-wepay-pay__inner">
+        <h1 class="weui-wepay-pay__title">充值金额(元)</h1>
+        <div class="weui-wepay-pay__inputs">
+          <strong class="weui-wepay-pay__strong">￥</strong>
+          <input type="number" class="weui-wepay-pay__input" [(ngModel)]="money" placeholder="请输入充值金额">
+        </div>
+        <div class="weui-wepay-pay__intro">请注意小数点，以防误操作！</div>
+      </div>
+    </div>
+    <div class="weui-wepay-pay__ft">
+      <p class="weui-wepay-pay__info">支付金额给商户</p>
+      <div class="weui-wepay-pay__btn">
+        <a href="javascript:;" (click)="pay()" class="weui-btn weui-btn_primary">立即充值</a>
+      </div>
+    </div>
+  </div>
+</div>
